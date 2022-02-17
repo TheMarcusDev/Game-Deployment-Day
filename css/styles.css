@@ -1,0 +1,508 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@500&display=swap');
+h1 {
+    font-family: 'Source Code Pro', monospace;
+    font-size: 40px;
+    color: greenyellow;
+    margin-top: 0%;
+}
+
+body {
+    background-image: url(../imgs/fundo.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: black;
+    font-family: 'Source Code Pro', monospace;
+    color: #FFF;
+}
+
+.pontuacao {
+    display: inline;
+    margin-left: 2%;
+}
+
+#container {
+    width: 950px;
+    height: auto;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#fundoGame {
+    width: 950px;
+    height: 620px;
+    padding-top: 10px;
+    background-image: url(../imgs/fundo_game.png);
+    background-repeat: no-repeat;
+    border-color: rgba(72, 61, 139, 0);
+    border-style: solid;
+}
+
+#jogador {
+    width: 305px;
+    height: 95px;
+    position: absolute;
+    left: 8px;
+    top: 179px;
+    background-image: url(../imgs/spaceship.png);
+}
+
+#inimigo1 {
+    width: 49px;
+    height: 66px;
+    position: absolute;
+    left: 900px;
+    top: 253px;
+    background-image: url(../imgs/inimigo1.png);
+}
+
+#inimigo2 {
+    width: 60px;
+    height: 56px;
+    position: absolute;
+    left: 900px;
+    top: 464px;
+    background-image: url(../imgs/inimigo2.png);
+}
+
+#amigo {
+    width: 74px;
+    height: 76px;
+    position: absolute;
+    left: 10px;
+    top: 450px;
+    background-image: url(../imgs/codepiece.png);
+}
+
+#inicio {
+    width: 350px;
+    height: 370px;
+    background-color: rgba(72, 61, 139, .8);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.anima1 {
+    background-image: url(../imgs/spaceship.png);
+    animation: play .5s steps(3) infinite;
+    -webkit-animation: play .5s steps(3) infinite;
+    -moz-animation: play .5s steps(3) infinite;
+    -ms-animation: play .5s steps(3) infinite;
+    -o-animation: play .5s steps(3) infinite;
+}
+
+@keyframes play {
+    from {
+        background-position: 0px;
+    }
+    to {
+        background-position: -919px;
+    }
+}
+
+@-webkit-keyframes play {
+    from {
+        background-position: 0px;
+    }
+    to {
+        background-position: -919px;
+    }
+}
+
+@-moz-keyframes play {
+    from {
+        background-position: 0px;
+    }
+    to {
+        background-position: -919px;
+    }
+}
+
+@-ms-keyframes play {
+    from {
+        background-position: 0px;
+    }
+    to {
+        background-position: -919px;
+    }
+}
+
+@-o-keyframes play {
+    from {
+        background-position: 0px;
+    }
+    to {
+        background-position: -919px;
+    }
+}
+
+.anima2 {
+    background-image: url(../imgs/inimigo1.png);
+    animation: play5 1s steps(4) infinite;
+    -webkit-animation: play5 1s steps(4) infinite;
+    -moz-animation: play5 1s steps(4) infinite;
+    -ms-animation: play5 1s steps(4) infinite;
+    -o-animation: play5 1s steps(4) infinite;
+}
+
+@keyframes play5 {
+    from {
+        background-position: 0px;
+    }
+    to {
+        background-position: -199px;
+    }
+}
+
+@-webkit-keyframes play5 {
+    from {
+        background-position: 0px;
+    }
+    to {
+        background-position: -199px;
+    }
+}
+
+@-moz-keyframes play5 {
+    from {
+        background-position: 0px;
+    }
+    to {
+        background-position: -199px;
+    }
+}
+
+@-ms-keyframes play5 {
+    from {
+        background-position: 0px;
+    }
+    to {
+        background-position: -199px;
+    }
+}
+
+@-o-keyframes play5 {
+    from {
+        background-position: 0px;
+    }
+    to {
+        background-position: -199px;
+    }
+}
+
+.anima3 {
+    background-image: url(../imgs/codepiece.png);
+    animation: play2 1.5s steps(8) infinite;
+    -webkit-animation: play2 1.5s steps(8) infinite;
+    -moz-animation: play2 1.5s steps(8) infinite;
+    -ms-animation: play2 1.5s steps(8) infinite;
+    -o-animation: play2 1.5s steps(8) infinite;
+}
+
+@keyframes play2 {
+    from {
+        background-position: 0px;
+    }
+    to {
+        background-position: -605px;
+    }
+}
+
+@-webkit-keyframes play2 {
+    from {
+        background-position: 0px;
+    }
+    to {
+        background-position: -605px;
+    }
+}
+
+@-moz-keyframes play2 {
+    from {
+        background-position: 0px;
+    }
+    to {
+        background-position: -605px;
+    }
+}
+
+@-ms-keyframes play2 {
+    from {
+        background-position: 0px;
+    }
+    to {
+        background-position: -605px;
+    }
+}
+
+@-o-keyframes play2 {
+    from {
+        background-position: 0px;
+    }
+    to {
+        background-position: -605px;
+    }
+}
+
+.anima5 {
+    background-image: url(../imgs/inimigo2.png);
+    animation: play4 .8s steps(3) infinite;
+    -webkit-animation: play4 .8s steps(3) infinite;
+    -moz-animation: play4 .8s steps(3) infinite;
+    -ms-animation: play4 .8s steps(3) infinite;
+    -o-animation: play4 .8s steps(3) infinite;
+}
+
+@keyframes play4 {
+    from {
+        background-position: 0px;
+    }
+    to {
+        background-position: -180px;
+    }
+}
+
+@-webkit-keyframes play4 {
+    from {
+        background-position: 0px;
+    }
+    to {
+        background-position: -180px;
+    }
+}
+
+@-moz-keyframes play4 {
+    from {
+        background-position: 0px;
+    }
+    to {
+        background-position: -180px;
+    }
+}
+
+@-ms-keyframes play4 {
+    from {
+        background-position: 0px;
+    }
+    to {
+        background-position: -180px;
+    }
+}
+
+@-o-keyframes play4 {
+    from {
+        background-position: 0px;
+    }
+    to {
+        background-position: -180px;
+    }
+}
+
+#disparo {
+    width: 50px;
+    height: 8px;
+    position: absolute;
+    background-image: url(../imgs/disparo.png);
+}
+
+#explosao1 {
+    width: 115px;
+    height: 115px;
+    position: absolute;
+}
+
+#explosao2 {
+    width: 115px;
+    height: 115px;
+    position: absolute;
+}
+
+#explosao4 {
+    width: 115px;
+    height: 115px;
+    position: absolute;
+}
+
+#explosao3 {
+    width: 75px;
+    height: 76px;
+    position: absolute;
+}
+
+.anima4 {
+    width: 75px;
+    height: 76px;
+    background-image: url(../imgs/codepieceDeath.png);
+    animation: play3 1s steps(7) infinite;
+    -webkit-animation: play3 1s steps(7) infinite;
+    -moz-animation: play3 1s steps(7) infinite;
+    -ms-animation: play3 1s steps(7) infinite;
+    -o-animation: play3 1s steps(7) infinite;
+}
+
+@keyframes play3 {
+    from {
+        background-position: 0px;
+    }
+    to {
+        background-position: -518px;
+    }
+}
+
+@-webkit-keyframes play3 {
+    from {
+        background-position: 0px;
+    }
+    to {
+        background-position: -518px;
+    }
+}
+
+@-moz-keyframes play3 {
+    from {
+        background-position: 0px;
+    }
+    to {
+        background-position: -518px;
+    }
+}
+
+@-ms-keyframes play3 {
+    from {
+        background-position: 0px;
+    }
+    to {
+        background-position: -518px;
+    }
+}
+
+@-o-keyframes play3 {
+    from {
+        background-position: 0px;
+    }
+    to {
+        background-position: -518px;
+    }
+}
+
+.anima6 {
+    width: 115px;
+    height: 115px;
+    background-image: url(../imgs/explosao.png);
+    animation: play6 .5s steps(7) infinite;
+    -webkit-animation: play6 .5s steps(7) infinite;
+    -moz-animation: play6 .5s steps(7) infinite;
+    -ms-animation: play6 .5s steps(7) infinite;
+    -o-animation: play6 .5s steps(7) infinite;
+}
+
+@keyframes play6 {
+    from {
+        background-position: 0px;
+    }
+    to {
+        background-position: -825px;
+    }
+}
+
+@-webkit-keyframes play6 {
+    from {
+        background-position: 0px;
+    }
+    to {
+        background-position: -825px;
+    }
+}
+
+@-moz-keyframes play6 {
+    from {
+        background-position: 0px;
+    }
+    to {
+        background-position: -825px;
+    }
+}
+
+@-ms-keyframes play6 {
+    from {
+        background-position: 0px;
+    }
+    to {
+        background-position: -825px;
+    }
+}
+
+@-o-keyframes play6 {
+    from {
+        background-position: 0px;
+    }
+    to {
+        background-position: -825px;
+    }
+}
+
+#placar {
+    width: 700px;
+    height: 50px;
+    position: absolute;
+    left: 5px;
+    top: 570px;
+}
+
+h2 {
+    font-family: 'Source Code Pro', monospace;
+    font-size: 20px;
+    color: white;
+    display: inline;
+    margin-left: 2%;
+    font-weight: lighter;
+}
+
+h4 {
+    font-family: 'Source Code Pro', monospace;
+    font-size: 20px;
+    color: lawngreen;
+    display: inline;
+    font-weight: lighter;
+}
+
+#energia2 {
+    width: 259px;
+    height: 67px;
+    position: absolute;
+    left: 700px;
+    top: 7px;
+}
+
+#energia {
+    width: 259px;
+    height: 67px;
+    position: absolute;
+    left: 700px;
+    top: 7px;
+}
+
+h3 {
+    font-family: 'Source Code Pro', monospace;
+    font-size: 20px;
+    color: magenta;
+}
+
+#fim {
+    width: 350px;
+    height: 200px;
+    background-color: rgba(72, 61, 139, .8);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    text-align: center;
+    padding: 10px;
+}
+
+#reinicia {
+    cursor: pointer;
+}
